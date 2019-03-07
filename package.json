@@ -7,9 +7,18 @@
     "@types/node": "11.10.5",
     "@types/react": "16.8.7",
     "@types/react-dom": "16.8.2",
+    "@types/redux-actions": "^2.3.2",
+    "moment": "^2.24.0",
     "react": "^16.8.4",
+    "react-dates": "^20.0.0",
     "react-dom": "^16.8.4",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5",
+    "react-select": "^2.4.1",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.5",
+    "redux-observable": "^1.0.0",
     "typescript": "3.3.3333"
   },
   "scripts": {
@@ -26,5 +35,13 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@types/react-dates": "^17.1.5",
+    "@types/react-redux": "^7.0.2",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/react-select": "^2.0.13",
+    "@types/redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.8"
+  }
 }
