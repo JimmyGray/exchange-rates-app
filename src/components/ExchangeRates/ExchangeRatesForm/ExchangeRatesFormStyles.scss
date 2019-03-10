@@ -1,0 +1,45 @@
+@import '../../../theme/theme';
+
+.exchange-rates {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    .SingleDatePicker {
+      width: 20rem;
+      margin: $spacing-small;
+    }
+    .SingleDatePickerInput {
+      width: 100%;
+      border: 1px solid $grey-400;
+    }
+
+    .CalendarDay__selected {
+      background: $blue-400;
+      border: 1px double $blue-400;
+    }
+
+    .DateInput {
+      width: 100%;
+    }
+    .DateInput_input {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+      &__focused {
+        border-bottom: 2px solid $blue-400;
+      }
+    }
+
+  }
+  &__search {
+    width: 20rem;
+  }
+  &__button-group {
+    display: flex;
+    flex-direction: row;
+  }
+}

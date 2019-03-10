@@ -12,6 +12,7 @@ export const currencies: Array<Currency> = [
     { value: 'CNY', label: 'China Yuan Renmimbi' },
     { value: 'CZK', label: 'Czech Koruna' },
     { value: 'DKK', label: 'Denmark Kroner' },
+    { value: 'EUR', label: 'Euro' },
     { value: 'GBP', label: 'United Kingdom Pounds' },
     { value: 'HKD', label: 'Hong Kong Dollars' },
     { value: 'HUF', label: 'Hungary Forint' },
@@ -35,5 +36,5 @@ export const currencies: Array<Currency> = [
     { value: 'HRK', label: 'Croatian Kuna' },
     { value: 'PLN', label: 'Poland złoty' },
     { value: 'RON', label: 'Romanian Leu' },
-    { value: 'THB', label: 'Thailand Baht' },
+    { value: 'THB', label: 'Thailand Baht' }
 ];

@@ -1,42 +1,39 @@
 import React, { Component } from 'react';
-
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router';
-import { Link, Route } from 'react-router-dom';
-import './App.css';
+import { Route } from 'react-router-dom';
+import 'rxjs';
+import './App.scss';
 import { About } from './components/About/About';
-import { ExchangeRatesViewConnected } from './components/ExchangeRates/ExchangeRatesView';
+import { ExchangeRates } from './components/ExchangeRates/ExchangeRates';
 import { Home } from './components/Home/Home';
+import { NavigationBar, NavigationBarRoute } from './components/NavigationBar/NavigationBar';
 import { configureStore } from './store/createStore';
 
 const store = configureStore();
+
+export const routes: Array<NavigationBarRoute> = [
+    {
+        label: 'Home',
+        path: '/'
+    },
+    {
+        label: 'About',
+        path: '/about/'
+    },
+    {
+        label: 'Exchange Rates',
+        path: '/exchange-rates/'
+    }
+];
 
 class App extends Component {
     render() {
         return (
             <Provider store={ store }>
-                <MemoryRouter>
-                    <div>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <Link to="/">Home</Link>
-                                </li>
-                                <li>
-                                    <Link to="/about/">About</Link>
-                                </li>
-                                <li>
-                                    <Link to="/exchange-rates/">Exchange Rates</Link>
-                                </li>
-                            </ul>
-                        </nav>
-                        <Route path="/" exact component={ Home }/>
-                        <Route path="/about" exact component={ About }/>
-                        <Route path="/exchange-rates" exact component={ ExchangeRatesViewConnected }/>
-                    </div>
-                </MemoryRouter>
+                <NavigationBar title='Exchange Rates' routes={routes}/>
             </Provider>
         );
     }

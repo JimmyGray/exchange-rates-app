@@ -1,0 +1,24 @@
+@import '../../../theme/theme';
+
+.button {
+  &__container {
+    display: flex;
+    height: 3rem;
+    margin: $spacing-small;
+    position: relative;
+    cursor: pointer;
+    line-height: 35px;
+    padding: 0 1.5rem;
+    background-color: $blue-400;
+    color: white;
+    font-size: $font-small;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
+    &--disabled {
+      background-color: grey;
+    }
+  }
+}

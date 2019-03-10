@@ -1,0 +1,29 @@
+@import '../../theme/theme';
+
+.navigation-bar {
+  &__container {
+    display: flex;
+    background-color: $blue-400;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $spacing-small;
+  }
+  &__list {
+  }
+  &__list-item {
+    list-style-type: none;
+  }
+  &__link {
+    margin: $spacing-small;
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      color: $grey-200;
+    }
+  }
+  &__title {
+    color: $white;
+    font-size: $font-medium;
+    padding: $spacing-small;
+  }
+}
